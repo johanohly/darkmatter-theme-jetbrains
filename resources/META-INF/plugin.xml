@@ -1,0 +1,27 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>darkmatter-theme-jetbrains</id>
+    <version>1.0.0</version>
+
+    <name>darkmatter</name>
+    <category>UI</category>
+
+    <vendor>Johan Ohly</vendor>
+
+    <idea-version since-build="251"/>
+
+    <description><![CDATA[
+    A port of Steve Simkins' <a href='https://github.com/stevedylandev/darkmatter-theme-zed/tree/main'>darkmatter theme</a>.
+  ]]></description>
+
+    <change-notes><![CDATA[
+    Initial release of the theme.
+  ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="darkmatter" path="/theme/darkmatter.theme.json"/>
+        <bundledColorScheme id="darkmatter" path="/theme/darkmatter"/>
+    </extensions>
+</idea-plugin>
